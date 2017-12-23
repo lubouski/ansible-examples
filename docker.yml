@@ -1,0 +1,7 @@
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: Action_pluggin that call's docker_module
+      param_with_docker_module:
+        image_name: "spotify/alpine"
+         
